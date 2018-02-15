@@ -14,24 +14,30 @@ request = 277
 if request > money:
     print("Insufficient Fund ")
     print(f"Your current balance is {money}")
+
+elif request <= 0: print("The reqested amount must be positive")
+
 else:
+
     while request > 0:
         if request // 100 > 0:
             print("Give 100")
             request -= 100
+
         elif request // 50 > 0:
             print("Give 50")
             request -= 50
+
         elif request // 10 > 0:
             print("Give 10")
             request -= 10
+
         elif request // 5 > 0:
             print("Give 5")
             request -= 5
+
         elif request > 0:
             print(f"Give {request}")
             request = 0
-
-
 
 print("Done")
