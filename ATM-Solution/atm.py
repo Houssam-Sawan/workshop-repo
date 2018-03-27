@@ -16,9 +16,9 @@ class ATM:
     # allowed papers: 100, 50, 10, 5, and rest of request
     def withdraw(self, request):
 
-        print(f"Welcom to {self.bank_name}")
+        print(f"Welcome to {self.bank_name}")
         print(f"Your current balance = {self.balance}")
-        print("===========================================")
+        print('='*10)
 
         remaining_balance = self.balance
 
@@ -54,7 +54,7 @@ class ATM:
                     print(f"Give {request}")
                     request = 0
 
-        print("===========================================")
+        print('='*10)
 
         self.balance = remaining_balance
         return remaining_balance
