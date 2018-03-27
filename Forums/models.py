@@ -12,7 +12,7 @@ class Member:
 class Post:
     ''' Descripes a Forum's post '''
 
-    def __init__(self, title, bodytxt):
+    def __init__(self, title, bodytxt=""):
         ''' Initialize new Post '''
         
         self.title = title
