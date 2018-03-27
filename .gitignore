@@ -4,3 +4,7 @@
 .stylelintrc
 .editorconfig
 .idea
+Forums/__pycache__/models.cpython-36.pyc
+Forums/__pycache__/
+
+.gitignore

@@ -9,6 +9,12 @@ class Member:
         self.age = age
 
 
+    def __str__(self):
+        ''' Return class info as printable string'''
+
+        return f"Name: {self.name}  || Age: { self.age }"
+
+
 class Post:
     ''' Descripes a Forum's post '''
 
@@ -18,6 +24,12 @@ class Post:
         self.title = title
 
         self.txt = bodytxt
+
+
+    def __str__(self):
+        ''' Return class info as printable string'''
+        
+        return f"Title: {self.title}\n{ self.txt }\n"
 
 
 

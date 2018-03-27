@@ -21,14 +21,10 @@ print("\n***** Members *****\n")
 
 for member in members:
 
-    print(f"Name: {member.name}  || Age: { member.age }")
+    print(member)
 
 print("\n***** Posts *****\n")
 
 for post in posts:
 
-    print(f"Title: {post.title}")
-
-    print(post.txt)
-
-    print()
+    print(post)
