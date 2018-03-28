@@ -27,13 +27,29 @@ p_store.add(post2)
 p_store.add(post3)
 
 
-print("\n***** Forum Summary *****\n")
+print("***** Forum Summary *****")
 
 print("\n***** Members *****\n")
 
 for member in m_store.get_all():
 
     print(member)
+
+print("\n***** Posts *****\n")
+
+for post in p_store.get_all():
+
+    print(post)
+
+print(m_store.entity_exists(member1))
+
+print(p_store.entity_exists(post3))
+
+print(m_store.entity_exists(Member("test", "0")))
+
+m_store.delete(10)
+
+p_store.delete(2)
 
 print("\n***** Posts *****\n")
 

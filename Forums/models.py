@@ -8,11 +8,13 @@ class Member:
 
         self.age = age
 
+        self.id = 0
+
 
     def __str__(self):
         ''' Return class info as printable string'''
 
-        return f"Name: {self.name}  || Age: { self.age }"
+        return f"ID: {self.id} || Name: {self.name} || Age: { self.age }"
 
 
 class Post:
@@ -25,11 +27,13 @@ class Post:
 
         self.txt = bodytxt
 
+        self.id = 0
+
 
     def __str__(self):
         ''' Return class info as printable string'''
         
-        return f"Title: {self.title}\n{ self.txt }\n"
+        return f"ID: {self.id} || Title: {self.title}\n{ self.txt }\n"
 
 
 
